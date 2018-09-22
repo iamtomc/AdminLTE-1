@@ -1,0 +1,3 @@
+<?php
+$notificationsnumber = '10';
+?>

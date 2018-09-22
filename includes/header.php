@@ -3,9 +3,9 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>A</b>L<b>P</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>Admin</b>LTE <b>PHP</b></span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -21,30 +21,30 @@
           <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
+              <span class="label label-success"><?php include 'header/scripts/messages.php'; echo $messagesnumber; ?></span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 4 messages</li>
+              <li class="header">You have <?php echo $messagesnumber; ?> messages</li>
               <li><?php include 'header/messages.php'; ?></li>
 
           <!-- Notifications: style can be found in dropdown.less -->
           <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
+              <span class="label label-warning"><?php include 'header/scripts/notifications.php'; echo $notificationsnumber; ?></span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 10 notifications</li>
+              <li class="header">You have <?php echo $notificationsnumber; ?> notifications</li>
               <li><?php include 'header/notifications.php'; ?></li>
 
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
+              <span class="label label-danger"><?php include 'header/scripts/tasks.php'; echo $tasknumber; ?></span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">You have 9 tasks</li>
+              <li class="header">You have <?php echo $tasknumber; ?> tasks</li>
               <li><?php include 'header/tasks.php'; ?></li>
 
           <!-- User Account: style can be found in dropdown.less -->
@@ -61,7 +61,6 @@
           </li>
         </ul>
       </div>
-	<?php include 'header/control-sidebar.php'; ?>
     </nav>
   </header>
 

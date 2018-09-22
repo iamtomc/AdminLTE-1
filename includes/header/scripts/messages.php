@@ -1,0 +1,3 @@
+<?php
+$messagesnumber = '4';
+?>
