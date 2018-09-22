@@ -855,5 +855,7 @@
 	
 	<?php include 'includes/footer.php'; ?>
 	<?php include 'includes/scripts.php'; ?>
+	<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+	<script src="dist/js/pages/dashboard2.js"></script>
 </div>
 </body>

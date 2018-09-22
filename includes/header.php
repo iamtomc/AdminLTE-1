@@ -35,7 +35,8 @@
             </a>
             <ul class="dropdown-menu">
               <li class="header">You have <?php echo $notificationsnumber; ?> notifications</li>
-              <li><?php include 'header/notifications.php'; ?></li>
+              <li><?php include 'header/notifications.php'; ?></li></ul>
+	
 
           <!-- Tasks: style can be found in dropdown.less -->
           <li class="dropdown tasks-menu">
@@ -46,6 +47,7 @@
             <ul class="dropdown-menu">
               <li class="header">You have <?php echo $tasknumber; ?> tasks</li>
               <li><?php include 'header/tasks.php'; ?></li>
+	
 
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
@@ -55,6 +57,8 @@
             </a>
 		<?php include 'header/user-account.php'; ?>
 
+	</li>
+
           <!-- Control Sidebar Toggle Button -->
           <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
@@ -63,4 +67,4 @@
       </div>
     </nav>
   </header>
-
+	<?php include 'header/control-sidebar.php'; ?>
