@@ -63,3 +63,4 @@
   <!-- /.form-box -->
 </div>
 <!-- /.register-box -->
+</body>
